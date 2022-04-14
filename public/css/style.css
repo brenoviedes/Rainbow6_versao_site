@@ -1,0 +1,702 @@
+:root {
+    --image-hero: url(../img/fundo.jpg);
+}
+
+:root {
+    --image-invitional1: url(../img/invitiona2l.jpg);
+}
+
+:root {
+    --image-hero_sobre: url(../img/fundo2.jpg);
+}
+
+:root {
+    --image-hero_sobre2: url(../img/fundo3.jpg);
+}
+
+:root {
+    --image-hero_art: url(../img/fundo4.jpg);
+}
+
+/*  CSS de itens gerais, como HEADER e FOOTER --------------------------------------------------------------------------*/
+
+body {
+    margin: 0;
+}
+
+#container_head {
+    background-color: #24262a;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 10vh;
+    font-family: 'button';
+}
+
+#container_head a img {
+    margin: 20px;
+}
+
+#menu_desktop {
+    margin: 0 10px 0 auto;
+    list-style: none;
+    font-size: 125%;
+    margin: 0 0 0 auto;
+    display: flex;
+}
+
+#menu_desktop li {
+    padding: 13px 10px;
+    margin: 0px 10px ;
+    background-color: #00ffe5;
+    display: inline;
+}
+
+#menu_desktop a {
+    text-decoration: none;
+    color: #24262a;
+}
+
+#menu_desktop li:hover {
+    background-color: #6dfff0;
+}
+
+#footer {
+    background-color: #000;
+    height: 5vh;
+    margin: 0;
+}
+
+#footer p {
+    font-family: 'padrao';
+    text-align: center;
+    line-height: 5vh;
+    color: #00ffe5;
+    margin: 0;
+}
+
+/* CSS da página HOME ----------------------------------------------------------------------------------------------------------------------------- */
+
+
+#hero {
+    background: linear-gradient( rgba(0,0,0, 0), rgba(0,0,0, 0.4)) , var(--image-hero);
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#folder_home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.news {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+#news_1 {
+    animation-name: show_up;
+    animation-duration: .8s;
+    animation-delay: .2s;
+    animation-fill-mode: backwards;
+}
+
+#news_2 {
+    animation-name: show_up;
+    animation-duration: .8s;
+    animation-delay: .4s;
+    animation-fill-mode: backwards;
+}
+
+#news_3 {
+    animation-name: show_up;
+    animation-duration: .8s;
+    animation-delay: .6s;
+    animation-fill-mode: backwards;
+}
+
+.news_img {
+    max-width: 350px;
+    height:200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.news_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.news_text {
+    background-color: #00ffe5;
+    max-width: 500px;
+    height: 200px;
+    font-family: 'padrao';
+    align-items: center;
+}
+
+.news_text p {
+    margin: 0;
+    text-align: justify;
+    padding: 15px ;
+    color: #24262a;
+}
+
+.news_text h4 {
+    text-align: center;
+    font-size: 110%;
+    margin: 0;
+    padding: 15px;
+    font-family: 'titulo';
+}
+
+.news_text button {
+    background-color: #2499ff;
+    border: none;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'button';
+    margin: 0px 0px 0px 15px;
+}
+
+/* A partir daqui começa a página SOBRE ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------s*/
+
+#container_sobre {
+    overflow: hidden;
+
+}
+
+#sobre_major img {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: .1s;
+    animation-fill-mode: backwards;
+}
+
+#sobre_major h1 {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: .3s;
+    animation-fill-mode: backwards;
+}
+
+#sobre_major p {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+#sobre_mapas img {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: .7s;
+    animation-fill-mode: backwards;
+}
+
+#sobre_mapas h1 {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: .9s;
+    animation-fill-mode: backwards;
+}
+
+#sobre_mapas p {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: 1.1s;
+    animation-fill-mode: backwards;
+}
+
+#sobre_operadores img {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: 1.3s;
+    animation-fill-mode: backwards;
+}
+
+#sobre_operadores h1 {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+
+#sobre_operadores p {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: 1.7s;
+    animation-fill-mode: backwards;
+}
+
+#sobre_gameplay img {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: 1.9s;
+    animation-fill-mode: backwards;
+}
+
+#sobre_gameplay h1 {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: 2.1s;
+    animation-fill-mode: backwards;
+}
+
+#sobre_gameplay p {
+    animation-name: move_up;
+    animation-duration: 1s;
+    animation-delay: 2.3s;
+    animation-fill-mode: backwards;
+}
+
+#container_sobre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.game_section {
+    background: linear-gradient( rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)) , var(--image-hero_sobre);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    padding: 15px 0px;
+    display: flex;
+}
+
+.fotoGame {
+    width: 40%;
+    height: 100%;
+    padding: 0px 10px;
+}
+
+.fotoGame img {
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    width: 60%;
+    height: 100%;
+    font-size: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description h1 {
+    font-family: 'titulo';
+    text-align: center;
+    color: #00ffe5;
+}
+
+.description p {
+    font-family: 'padrao';
+    text-align: justify;
+    padding: 0px 30px;
+    color: #24262a;
+    color: #00ffe5;
+}
+
+.game_section:nth-child(even) {
+    flex-direction: row-reverse;
+    background: linear-gradient( rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)) , var(--image-hero_sobre2);
+    text-align: right;
+}
+
+/* CSS da página GALERIA -----------------------------------------------------------------------------*/
+
+.container_galeria * {
+    box-sizing: border-box;
+    font-family: 'padrao';
+}
+
+input {
+    display: none;
+}
+
+
+.container_galeria {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,255,229, .7);
+    min-height: 85vh;
+
+    background: linear-gradient( rgba(0,0,0, 0.1), rgba(0,0,0, 0.5)) , var(--image-hero_art);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container_galeria h1 {
+    font-family: 'titulo';
+    position: relative;
+    margin-top: 0;
+    padding-top: 15px;
+}
+
+.container_galeria h1::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background-color: crimson;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    animation: animate_text 10s linear infinite;
+}
+
+.top-content {
+    background-color: #00ffe5;
+    width: 90%;
+    margin: 0 auto 10px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 5px lightgray;
+}
+
+h3 {
+    height: 100%;
+    background-color: #24262a;
+    line-height: 60px;
+    padding: 0 50px;
+    color: #00ffe5;
+
+}
+
+label {
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: rgba(36, 38, 42, 0.384);
+    cursor: pointer;
+    transition: color .5s;
+}
+
+label:hover {
+    color: rgba(36, 38, 42);
+}
+
+.photo_gallery {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 15px;
+    padding-top: 10px ;
+}
+
+.foto {
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgray;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+
+
+.foto::before {
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .1s;
+}
+
+.foto::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    background-color: rgba(0,0,0, .2);
+    transition: .3;
+}
+
+.foto:hover::after {
+    height: 100%;
+}
+
+.foto:hover::before {
+    opacity: 1;
+}
+
+#check1:checked ~ .container_galeria .photo_gallery .foto {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+
+#check2:checked ~ .container_galeria .photo_gallery .campeonato {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check2:checked ~ .container_galeria .photo_gallery .arte, #check2:checked ~ .container_galeria .photo_gallery .gameplay {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+#check3:checked ~ .container_galeria .photo_gallery .arte {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check3:checked ~ .container_galeria .photo_gallery .campeonato, #check3:checked ~ .container_galeria .photo_gallery .gameplay {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+#check4:checked ~ .container_galeria .photo_gallery .gameplay {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check4:checked ~ .container_galeria .photo_gallery .campeonato, #check4:checked ~ .container_galeria .photo_gallery .arte {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+@media only screen and (max-width: 1250px) {
+
+/* CSS da página HOME @media only -----------------------------------------------------------------------------*/
+
+    .photo_gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #footer {
+        min-height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer p {
+        line-height: 20px;
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    /* CSS da página HOME @media only -----------------------------------------------------------------------------*/
+
+    #container_head {
+        height: 130px;
+        display: block
+    }
+
+    #container_head a img {
+        margin: 5px 0px 15px 0px;
+    }
+
+    #menu_desktop {
+        margin: 0;
+        list-style: none;
+        font-size: 125%;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu_desktop li {
+        padding: 13px 10px;
+        margin: 0px 10px ;
+        background-color: #00ffe5;
+        justify-content: space-around;
+    }
+
+    #menu_desktop a {
+        text-decoration: none;
+        color: #24262a;
+    }
+
+    #hero {
+        height: 100%;
+    }
+
+    #folder_home {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0px;
+        height: auto;
+    }
+
+    .news_img {
+        padding-left: 0px;
+    }
+
+    .news_text {
+        max-width: 350px;
+        height: auto;
+        text-align: center;
+    }
+
+    .news_text p {
+        padding: 5px 15px 20px 15px;
+    }
+
+    .news_text h4 {
+        padding: 5px;
+    }
+
+    .news_text button {
+        margin: 0px 0px 20px 0px;
+    }
+
+ /* CSS da página SOBRE @media only -----------------------------------------------------------------------------*/
+
+    #container_sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game_section {
+        padding: 15px 0px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .fotoGame {
+        width: 90%;
+        padding: 0;
+    }
+
+    .description {
+        width: 90%;
+        height: auto;
+    }
+
+    .description h1 {
+    font-size: 150%;
+        margin: 10px;
+    }
+
+    .description p {
+        font-size: 90%;
+        padding: 0px 10px;
+        margin: 0px;
+    }
+
+    .game_section:nth-child(even) {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    #footer {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    /* CSS da página HOME @media only -----------------------------------------------------------------------------*/
+
+    .photo_gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-content {
+
+        width: 90%;
+        margin: 0 auto 15px auto;
+        height: auto;
+        display: inline-block;
+        align-items: center;
+        box-shadow: 3px 3px 5px lightgray;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    h3 {
+        height: 100%;
+        background-color: #24262a;
+        line-height: 60px;
+        padding: 0 50px;
+        color: #00ffe5;
+        margin: 0;
+
+    }
+
+    label {
+        display: inline-block;
+        height: 100%;
+        margin: 0 5px;
+        line-height: 60px;
+        font-size: 18px;
+        color: rgba(36, 38, 42, 0.384);
+        cursor: pointer;
+        transition: color .5s;
+
+    }
+
+    label:hover {
+        color: rgba(36, 38, 42);
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+
+    #menu_desktop li {
+        padding: 8px 5px;
+        margin: 0px 3px ;
+        }
+}

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "titulo";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "padrao";
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: "button";
+    src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+
